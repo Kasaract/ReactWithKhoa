@@ -13,7 +13,7 @@
 
 2. Create a router (using react-router-dom) and makes routes for each of the Home, About, and Contact components.
 
-## Task 3 - 09/02/19
+## Task 3 - 09/02/19 - Completed
 
 1. Refactor About component to functional component
 
