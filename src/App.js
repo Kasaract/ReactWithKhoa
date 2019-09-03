@@ -7,6 +7,7 @@ import Home from './components/Home';
 import About from './components/About';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
+import State from './components/State';
 import NavBar from './components/NavBar';
 
 function App() {
@@ -19,6 +20,7 @@ function App() {
           <Route path="/about" component={About}/>
           <Route path="/contact" component={Contact}/>
           <Route path="/blog" component={Blog}/>
+          <Route path="/state" component={State}/>
         </Switch>
       </Router>
     </div>
