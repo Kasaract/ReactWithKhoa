@@ -18,3 +18,9 @@
 1. Refactor About component to functional component
 
 2. Create a new component called Blog (functional) and add it to the router/navbar
+
+## Task 4 - 09/03/19
+
+1. In State.js, create a state hook for text input
+
+2. Display the text on a label
