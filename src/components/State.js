@@ -1,18 +1,22 @@
 import React, { useState } from "react";
 
-const About = () => {
-  const [number, getNumber] = useState(0);
-
+  const State = () => {
+    const [number, getNumber] = useState(0);
+    
+    handleInputChange = () => {
+        event.setState({
+            [event.target.name]: event.target.value
+        })
+    }
   return (
     <div>
       <button onClick={() => getNumber(number + 1)}>Click Me!</button>
       <br />
       <label>{number}</label>
-
       <br />
-      <input type="text" placeholder="Type here"/>
+      <input type='text' placeholder='text' onChange={this.handleInputChange}/>
     </div>
   )
 }
-  
-export default About;
+
+export default State;
