@@ -1,8 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 
 const State = () => {
   const [number, getNumber] = useState(0);
   const [text, getText] = useState("");
+
+  useEffect(
+    () => console.log("Hey, this is useEffect")
+    // fetch(api.url)
+    //   .then(res => res.json())
+    //   .then(getText(res))
+    , 
+    [])
 
   return (
     <div>
