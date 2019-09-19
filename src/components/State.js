@@ -3,7 +3,7 @@ import React, { useState } from "react";
   const State = () => {
     const [number, getNumber] = useState(0);
     
-    handleInputChange = () => {
+  const handleInputChange = (event) => {
         event.setState({
             [event.target.name]: event.target.value
         })
