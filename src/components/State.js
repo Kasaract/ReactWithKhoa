@@ -1,4 +1,16 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
+
+const State = () => {
+  const [number, getNumber] = useState(0);
+  const [text, getText] = useState("");
+
+  useEffect(
+    () => console.log("Hey, this is useEffect")
+    // fetch(api.url)
+    //   .then(res => res.json())
+    //   .then(getText(res))
+    , 
+    [])
 
   const State = () => {
     const [number, getNumber] = useState(0);
@@ -14,7 +26,10 @@ import React, { useState } from "react";
       <br />
       <label>{number}</label>
       <br />
-      <input type='text' placeholder='text' onChange={this.handleInputChange}/>
+      <input type='text' placeholder='text' onChange={(e) => getText(e.target.value)}/>
+      <br />
+      <label>{text}</label>
+      <br />
     </div>
   )
 }

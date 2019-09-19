@@ -8,7 +8,9 @@ import About from './components/About';
 import Contact from './components/Contact';
 import Blog from './components/Blog';
 import State from './components/State';
+import Popup from './components/Popup';
 import NavBar from './components/NavBar';
+
 
 function App() {
   return (
@@ -21,6 +23,7 @@ function App() {
           <Route path="/contact" component={Contact}/>
           <Route path="/blog" component={Blog}/>
           <Route path="/state" component={State}/>
+          <Route path="/popup" component={Popup}/>
         </Switch>
       </Router>
     </div>
