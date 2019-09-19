@@ -19,6 +19,9 @@ const NavBar = () => (
       <li>
         <Link to="/state">State</Link>
       </li>
+      <li>
+        <Link to="/popup">Popup</Link>
+      </li>
     </ul>
   </nav>
 );
